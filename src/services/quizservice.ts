@@ -13,8 +13,8 @@ export const getQuizData = async (totalQuestions: number, level: string) : Promi
             question: questionObj.question,
             answer: questionObj.correct_answer,
             correct_answer:questionObj.correct_answer,
-            option: questionObj.incorrect_answers.concat(questionObj.correct_answer)
-          //  correct_answer: questionObj.correct_answer,
+            option: shuffleArray(questionObj.incorrect_answers.concat(questionObj.correct_answer))
+          
         }
     })
     return quiz;

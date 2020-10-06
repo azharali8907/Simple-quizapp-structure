@@ -1,0 +1,39 @@
+.countdown-timer {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+  }
+  
+  .countdown-timer__circle circle {
+    stroke-dasharray: 151px;
+    stroke-dashoffset: 151px;
+    stroke-linecap: butt;
+    stroke-width: 4px;
+    stroke: #fd4f57;
+    fill: none;
+  }
+  
+  .countdown-timer__circle svg {
+    width: 52px;
+    height: 52px;
+    transform: rotateZ(-90deg);
+  }
+  
+  .countdown-timer__text {
+    position: absolute;
+    top: 17px;
+    width: 52px;
+  
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  @keyframes countdown-animation {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 151px;
+    }
+  }

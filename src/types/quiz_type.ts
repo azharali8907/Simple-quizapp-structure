@@ -14,10 +14,21 @@ export type QuizType = {
     answer: string
     option: string[]
     correct_answer: string
+    
 }
 
 export type questionTypeProps = {
     question: string
     option: string[]
+    questionNum: number
+    totalQuestions: number
     callback: (e:React.FormEvent<EventTarget>, ans:string)=>void
 }
+
+export type Props = {
+    startTimeInSeconds: number;
+  }
+  
+export type State = {
+    timeRemainingInSeconds: number;
+  }
