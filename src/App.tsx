@@ -70,7 +70,7 @@ function App() {
     <div className="App">
       <h1>Quiz App</h1>
 
-      <p> {CountdownTimer} Hello world</p>
+      <p> <CountdownTimer /> Hello world</p>
       
         
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {Props, State} from './../types/quiz_type';
 
 
-import './style.css';
+//import './style.css';
 
 
 
