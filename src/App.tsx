@@ -3,7 +3,11 @@ import './App.css';
 import { QuizType } from './types/quiz_type'
 import { getQuizData } from './services/quizservice';
 import QuestionCard from './components/QuestionCard';
-import CountdownTimer from './components/Timer';
+//import CountdownTimer from './components/Timer';
+import CountTimer from './components/CountTimer'; 
+
+
+
 
 
 
@@ -70,7 +74,9 @@ function App() {
     <div className="App">
       <h1>Quiz App</h1>
 
-      <p> <CountdownTimer /> Hello world</p>
+
+      <p><CountTimer /> Counter</p>
+     
       
         
 

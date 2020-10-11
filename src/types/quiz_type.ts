@@ -26,9 +26,9 @@ export type questionTypeProps = {
 }
 
 export type Props = {
-    startTimeInSeconds: number;
+    startTimeInSeconds: number
   }
   
 export type State = {
-    timeRemainingInSeconds: number;
+    timeRemainingInSeconds: number
   }

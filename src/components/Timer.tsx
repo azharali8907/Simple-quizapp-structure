@@ -2,11 +2,11 @@ import React from 'react';
 import {Props, State} from './../types/quiz_type';
 
 
-//import './style.css';
+import './style.css';
 
 
 
-class CountdownTimer extends React.Component<Props, State> {
+class CountdownTimer extends React.Component< {startTimeInSeconds:number}, State> {
     private timer: any;
   
     constructor(props: Props) {
